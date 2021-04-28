@@ -95,8 +95,6 @@ public class Center {
             } else {
                 System.out.println("You are not registered");
             }
-
-
         } catch (IOException e) {
             System.out.println("An error occurred.");
             e.printStackTrace();
