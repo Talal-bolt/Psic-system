@@ -6,12 +6,16 @@ import java.time.*;
 import java.io.*;
 
 public class Physician extends Center{
+    int bOption;
+    int drSelect;
+    int weekN;
+    int dayN;
     public void patientBookingOpt(String p_id,String p_name) {
         System.out.println("Book your Appointment");
         System.out.println("Press 1 to Search by Physician");
         System.out.println("Press 2 to Search by Expertise");
         Scanner bookOption = new Scanner(System.in);  // Input to Identify the patient history
-        int bOption = bookOption.nextInt();  // Read user input
+        this.bOption = bookOption.nextInt();  // Read user input
         if (bOption == 1) {
             System.out.println("Press 1 for Dr. Ali");
             System.out.println("Press 2 for Dr. Rasthana");
@@ -19,7 +23,7 @@ public class Physician extends Center{
             System.out.println("Press 4 for Dr. Samuel Martin");
             System.out.println("Press 5 for Dr. Katherine");
             Scanner drChoice = new Scanner(System.in);
-            int drSelect = drChoice.nextInt();  // Read user input
+            this.drSelect = drChoice.nextInt();  // Read user input
             if (drSelect == 1) {
                 String[] d1Data = {"1", "Dr.Ali", "Neural mobilisation", "123456789", "N.M Ward"};
                 System.out.println("Book Appointment");
@@ -50,7 +54,7 @@ public class Physician extends Center{
             System.out.println("Press 4 for Mobilisation of the spine and joints");
             System.out.println("Press 5 for Pool Rehabilitation");
             Scanner AoEChoice = new Scanner(System.in);
-            int drSelect = AoEChoice.nextInt();  // Read user input
+            this.drSelect = AoEChoice.nextInt();  // Read user input
             if (drSelect == 1) {
                 String[] d1Data = {"1", "Dr.Ali", "Neural mobilisation", "123456789", "N.M Ward"};
                 System.out.println("Book Appointment");
@@ -81,7 +85,7 @@ public class Physician extends Center{
     public void selectDoctor(String[] option,String p_id,String p_name) {
         System.out.println("Select Week (1 or 2 or 3 or 4)");
         Scanner weekSelect = new Scanner(System.in);
-        int weekN = weekSelect.nextInt();
+        this.weekN = weekSelect.nextInt();
         if (weekN == 1) {
             System.out.println("Select Appointment");
             System.out.println("Press 1 for Monday, 1PM to 3PM");
@@ -89,7 +93,7 @@ public class Physician extends Center{
             System.out.println("Press 3 for Wednesday,8AM to 10AM");
             System.out.println("Press 4 for Thursday,4PM to 5PM");
             Scanner daySelect = new Scanner(System.in);
-            int dayN = daySelect.nextInt();
+            this.dayN = daySelect.nextInt();
             if (dayN == 1) {
                 String apB = "Monday 1PM to 3PM";
                 bookingValidation(option,apB,weekN,p_id,p_name);
@@ -112,7 +116,7 @@ public class Physician extends Center{
             System.out.println("Press 3 for Wednesday,4PM to 5PM");
             System.out.println("Press 4 for Thursday,8AM to 10AM");
             Scanner daySelect = new Scanner(System.in);
-            int dayN = weekSelect.nextInt();
+            this.dayN = weekSelect.nextInt();
             if (dayN == 1) {
                 String apB = "Monday  6PM to 8PM";
                 bookingValidation(option,apB,weekN,p_id,p_name);
@@ -136,7 +140,7 @@ public class Physician extends Center{
             System.out.println("Press 3 for Wednesday,4PM to 5PM");
             System.out.println("Press 4 for Thursday,6PM to 8PM");
             Scanner daySelect = new Scanner(System.in);
-            int dayN = weekSelect.nextInt();
+            this.dayN = weekSelect.nextInt();
             if (dayN == 1) {
                 String apB = "Monday  8AM to 10AM";
                 bookingValidation(option,apB,weekN,p_id,p_name);
@@ -161,7 +165,7 @@ public class Physician extends Center{
             System.out.println("Press 3 for Wednesday,1PM to 3PM");
             System.out.println("Press 4 for Thursday,6PM to 8PM");
             Scanner daySelect = new Scanner(System.in);
-            int dayN = weekSelect.nextInt();
+            this.dayN = weekSelect.nextInt();
             if (dayN == 1) {
                 String apB = "Monday  9AM to 11AM";
                 bookingValidation(option,apB,weekN,p_id,p_name);
@@ -190,7 +194,7 @@ public class Physician extends Center{
         System.out.println("Press 1 to Search by Physician");
         System.out.println("Press 2 to Search by Expertise");
         Scanner bookOption = new Scanner(System.in);  // Input to Identify the patient history
-        int bOption = bookOption.nextInt();  // Read user input
+        this.bOption = bookOption.nextInt();  // Read user input
         if (bOption == 1) {
             System.out.println("Press 1 for Dr. Ali");
             System.out.println("Press 2 for Dr. Rasthana");
@@ -198,7 +202,7 @@ public class Physician extends Center{
             System.out.println("Press 4 for Dr. Samuel Martin");
             System.out.println("Press 5 for Dr. Katherine");
             Scanner drChoice = new Scanner(System.in);
-            int drSelect = drChoice.nextInt();  // Read user input
+            this.drSelect = drChoice.nextInt();  // Read user input
             if (drSelect == 1) {
                 String[] d1Data = {"1", "Dr.Ali", "Neural mobilisation", "123456789", "N.M Ward"};
                 System.out.println("Book Appointment");
@@ -229,7 +233,7 @@ public class Physician extends Center{
             System.out.println("Press 4 for Mobilisation of the spine and joints");
             System.out.println("Press 5 for Pool Rehabilitation");
             Scanner AoEChoice = new Scanner(System.in);
-            int drSelect = AoEChoice.nextInt();  // Read user input
+            this.drSelect = AoEChoice.nextInt();  // Read user input
             if (drSelect == 1) {
                 String[] d1Data = {"1", "Dr.Ali", "Neural mobilisation", "123456789", "N.M Ward"};
                 System.out.println("Book Appointment");
@@ -262,7 +266,7 @@ public class Physician extends Center{
     public void selectDoctorC(String[] option,String p_id,String p_name) {
         System.out.println("Select Week (1 or 2 or 3 or 4)");
         Scanner weekSelect = new Scanner(System.in);
-        int weekN = weekSelect.nextInt();
+        this.weekN = weekSelect.nextInt();
         if (weekN == 1) {
             System.out.println("Select Consultation");
             System.out.println("Day Available: Friday");
@@ -271,7 +275,7 @@ public class Physician extends Center{
             System.out.println("Press 3 2:00PM to 2:30PM");
             System.out.println("Press 4 2:30PM to 3:00PM");
             Scanner daySelect = new Scanner(System.in);
-            int dayN = daySelect.nextInt();
+            this.dayN = daySelect.nextInt();
             if (dayN == 1) {
                 String apB = "1:00PM to 1:30PM";
                 visitorValidation(option,apB,weekN,p_id,p_name);
@@ -296,7 +300,7 @@ public class Physician extends Center{
             System.out.println("Press 3 2:00PM to 2:30PM");
             System.out.println("Press 4 2:30PM to 3:00PM");
             Scanner daySelect = new Scanner(System.in);
-            int dayN = daySelect.nextInt();
+            this.dayN = daySelect.nextInt();
             if (dayN == 1) {
                 String apB = "1:00PM to 1:30PM";
                 visitorValidation(option,apB,weekN,p_id,p_name);
@@ -321,7 +325,7 @@ public class Physician extends Center{
             System.out.println("Press 3 2:00PM to 2:30PM");
             System.out.println("Press 4 2:30PM to 3:00PM");
             Scanner daySelect = new Scanner(System.in);
-            int dayN = daySelect.nextInt();
+            this.dayN = daySelect.nextInt();
             if (dayN == 1) {
                 String apB = "1:00PM to 1:30PM";
                 visitorValidation(option,apB,weekN,p_id,p_name);
@@ -347,7 +351,7 @@ public class Physician extends Center{
             System.out.println("Press 3 2:00PM to 2:30PM");
             System.out.println("Press 4 2:30PM to 3:00PM");
             Scanner daySelect = new Scanner(System.in);
-            int dayN = daySelect.nextInt();
+            this.dayN = daySelect.nextInt();
             if (dayN == 1) {
                 String apB = "1:00PM to 1:30PM";
                 visitorValidation(option,apB,weekN,p_id,p_name);
