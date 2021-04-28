@@ -77,9 +77,7 @@ public class Physician extends Center{
         } else {
             System.out.println("Invalid Option");
         }
-
     }
-
     public void selectDoctor(String[] option,String p_id,String p_name) {
         System.out.println("Select Week (1 or 2 or 3 or 4)");
         Scanner weekSelect = new Scanner(System.in);
@@ -107,7 +105,6 @@ public class Physician extends Center{
             } else {
                 System.out.println("Wrong Day Selected");
             }
-
         } else if (weekN == 2) {
             System.out.println("Select Appointment");
             System.out.println("Press 1 for Monday, 6PM to 8PM");
