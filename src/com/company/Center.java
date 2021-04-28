@@ -6,12 +6,13 @@ import java.time.*;
 import java.io.*;  // Import the File class
 
 public class Center {
+    int count;
     public void patientDataStorage(String patient_Name, String patient_Address, int patientTel_num) {
         try {
             BufferedReader bufferedReader = new BufferedReader(new FileReader("Patient_Record.csv"));
             String input;
             String line = "";
-            int count = 0;
+            this.count = 0;
             int countD = 0;
             while ((line = bufferedReader.readLine()) != null) {
                 countD++;
