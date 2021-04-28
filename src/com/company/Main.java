@@ -47,25 +47,7 @@ public class Main {
                 System.out.println("Please Select the Right Option");
             }
         } else if (mainMenu_option == 3) {
-            System.out.println("Welcome to Patient Portal");
-            System.out.println("Press 1 for New Patient");
-            System.out.println("Press 2 for Existing Patient");
-            System.out.println("Press 0 to Go Back");
-            Scanner patient = new Scanner(System.in);  // Input to Identify the patient history
-            int patient_record = patient.nextInt();  // Read user input
-            if (patient_record == 1) {
-                Patient newPatient = new Patient();
-                newPatient.createPatient();
-            } else if (patient_record == 2) {
-                System.out.println("Enter Patient ID");
-                Patient newPatient = new Patient();
-                newPatient.validatingPatient();
-
-            } else if (patient_record == 0) {
-                Start();
-            } else {
-                System.out.println("Please Select the Right Option");
-            }
+            patient();
 
         }
 //        else if(mainMenu_option==4){
@@ -73,6 +55,28 @@ public class Main {
 //
 //        }
         else {
+            System.out.println("Please Select the Right Option");
+        }
+    }
+
+    public static void patient() {
+        System.out.println("Welcome to Patient Portal");
+        System.out.println("Press 1 for New Patient");
+        System.out.println("Press 2 for Existing Patient");
+        System.out.println("Press 0 to Go Back");
+        Scanner patient = new Scanner(System.in);  // Input to Identify the patient history
+        int patient_record = patient.nextInt();  // Read user input
+        if (patient_record == 1) {
+            Patient newPatient = new Patient();
+            newPatient.createPatient();
+        } else if (patient_record == 2) {
+            System.out.println("Enter Patient ID");
+            Patient newPatient = new Patient();
+            newPatient.validatingPatient();
+
+        } else if (patient_record == 0) {
+            Start();
+        } else {
             System.out.println("Please Select the Right Option");
         }
     }
