@@ -1,4 +1,4 @@
-Doctor ID,Doctor,Area of Expertise,Patient id,Patient Name,Time,week number,Status,Room
+Doctor ID,Doctor,Area of Expertise,Patient id,Patient Name,Time,week number,Room,Status
 4,Dr.Steve Ellison,Massage,9,Tony Stark,Tuesday  1PM to 3PM,2,Massage Room,Process
 1,Dr.Ali,Neural mobilisation,9,Tony Stark,Monday 1PM to 3PM,1,N.M Ward,Process
 4,Dr.Steve Ellison,Massage,3,Danish Asim,Monday  6PM to 8PM,2,Massage Room,Process
@@ -6,3 +6,4 @@ Doctor ID,Doctor,Area of Expertise,Patient id,Patient Name,Time,week number,Stat
 5,Dr.Susan Kate,Mobilisation ,19,Riz,Thursday  4PM to 5PM,1,General Ward,Process
 4,Dr.Steve Ellison,Massage,19,Riz,Thursday  6PM to 8PM,3,Massage Room,Process
 4,Dr.Steve Ellison,Massage,21,habash,Monday 1PM to 3PM,1,Massage Room,Process
+5,Dr.Susan Kate,Mobilisation ,22,Talal Khan,Monday  6PM to 8PM,2,General Ward,Process

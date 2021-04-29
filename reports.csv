@@ -10,3 +10,5 @@ Doctor ID,Doctor,Area of Expertise,Patient id,Patient Name,Time,week number,Stat
 4,Dr.Steve Ellison,Massage,19,Riz,Thursday  6PM to 8PM,3,Massage Room,Process
 2,Dr.Rasthana,Acupuncture,V,Ali,2:00PM to 2:30PM,1,Acupunture Ward,Process
 4,Dr.Steve Ellison,Massage,21,habash,Monday 1PM to 3PM,1,Massage Room,Process
+1,Dr.Ali,Neural mobilisation,V,Danials,1:00PM to 1:30PM,1,N.M Ward,Process
+5,Dr.Susan Kate,Mobilisation ,22,Talal Khan,Monday  6PM to 8PM,2,General Ward,Process
